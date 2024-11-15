@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* Full-height section */
+.vh-100 {
+    height: 100vh;
+}
+
+/* Container customization */
+.h-custom {
+    height: calc(100% - 20px);
+}
+
+/* Sample image styling for larger screens */
+.sample-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Input and label styling for alignment */
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.col-form-label {
+    font-weight: bold;
+}
+
+/* Centering and spacing adjustments */
+.text-center {
+    text-align: center;
+}
+
+.sign-up-link {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    /* For smaller screens, resize the image */
+    .sample-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Ensure the form takes full width */
+    .col-md-8, .col-lg-6, .col-xl-5 {
+        width: 100%;
+    }
+
+    /* Adjust input widths for mobile */
+    .form-group input {
+        width: 100%;
+    }
+
+    /* Adjust the margins and padding for smaller screens */
+    .sign-up-link {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens (e.g., phones in portrait mode) */
+    .sample-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Adjust form padding for mobile */
+    .form-group {
+        padding: 0 15px;
+    }
+
+    /* Full width for inputs and button */
+    .form-group input,
+    .btn {
+        width: 100%;
+    }
+
+    /* Centering text for smaller screens */
+    .text-center {
+        text-align: center;
+    }
+}
+
